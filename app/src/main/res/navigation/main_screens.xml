@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screens"
+    app:startDestination="@id/mainScreen">
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.finalprogect.presrntation.mainScreen.AddTask.mainScreen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreen_to_chooseTasks"
+            app:destination="@id/chooseTasks" />
+        <action
+            android:id="@+id/action_mainScreen_to_observeTask"
+            app:destination="@id/observeTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseTasks"
+        android:name="com.example.finalprogect.presrntation.mainScreen.ChooseTask.ChooseTasks"
+        android:label="fragment_choose_tasks"
+        tools:layout="@layout/fragment_choose_tasks" >
+        <action
+            android:id="@+id/action_chooseTasks_to_addRegularTask"
+            app:destination="@id/addRegularTask" />
+        <action
+            android:id="@+id/action_chooseTasks_to_addSingleTask"
+            app:destination="@id/addSingleTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRegularTask"
+        android:name="com.example.finalprogect.presrntation.mainScreen.AddTask.AddRegularTask"
+        android:label="fragment_add_regular_task"
+        tools:layout="@layout/fragment_add_regular_task" >
+        <action
+            android:id="@+id/action_addRegularTask_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <action
+            android:id="@+id/action_addRegularTask_to_chooseTasks"
+            app:destination="@id/chooseTasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSingleTask"
+        android:name="com.example.finalprogect.presrntation.mainScreen.AddTask.AddSingleTask"
+        android:label="fragment_add_single_task"
+        tools:layout="@layout/fragment_add_single_task" >
+        <action
+            android:id="@+id/action_addSingleTask_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <action
+            android:id="@+id/action_addSingleTask_to_chooseTasks"
+            app:destination="@id/chooseTasks" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTask"
+        android:name="com.example.finalprogect.UpdateTask"
+        android:label="fragment_update_task"
+        tools:layout="@layout/fragment_update_task" >
+        <action
+            android:id="@+id/action_updateTask_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <action
+            android:id="@+id/action_updateTask_to_observeTask"
+            app:destination="@id/observeTask" />
+    </fragment>
+    <fragment
+        android:id="@+id/observeTask"
+        android:name="com.example.finalprogect.ObserveTask"
+        android:label="fragment_observe_task"
+        tools:layout="@layout/fragment_observe_task" >
+        <action
+            android:id="@+id/action_observeTask_to_updateTask"
+            app:destination="@id/updateTask" />
+        <action
+            android:id="@+id/action_observeTask_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <argument
+            android:name="currentTask"
+            app:argType="com.example.domain.entities.Task" />
+    </fragment>
+</navigation>

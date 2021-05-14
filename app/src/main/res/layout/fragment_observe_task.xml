@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ObserveTask">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarOfObserveScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/backToMainScreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"/>
+
+            <ImageView
+                android:id="@+id/updateBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_draw"
+                app:layout_constraintEnd_toStartOf="@id/deleteBtn"
+                android:layout_marginEnd="32dp"
+                />
+
+            <ImageView
+                android:id="@+id/deleteBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_outline_24"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/watchImage"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/regular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOfObserveScreen"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textTaskObserve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/noRegular"
+        app:layout_constraintStart_toEndOf="@+id/watchImage"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarOfObserveScreen"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data"
+
+        app:layout_constraintStart_toStartOf="@id/textTaskObserve"
+        app:layout_constraintTop_toBottomOf="@id/textTaskObserve"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dataInCifry"
+        app:layout_constraintTop_toBottomOf="@id/data"
+        app:layout_constraintStart_toStartOf="@id/data"
+        app:layout_constraintEnd_toEndOf="@id/data"
+        android:text="@string/_12_02_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remember"
+        app:layout_constraintEnd_toEndOf="@id/textTaskObserve"
+        app:layout_constraintStart_toEndOf="@id/data"
+        app:layout_constraintTop_toBottomOf="@id/textTaskObserve"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/addRemember"
+        android:text="@string/add"
+        app:layout_constraintTop_toBottomOf="@id/remember"
+        app:layout_constraintStart_toStartOf="@id/remember"
+        app:layout_constraintEnd_toEndOf="@id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

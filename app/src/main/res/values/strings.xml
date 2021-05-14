@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">FinalProgect</string>
+    <string name="when">Когда, если не сейчас?</string>
+    <string name="start">Начни заботиться о себе и формировать </string>
+    <string name="btn_begin">Начать</string>
+    <string name="three_text_view">привычки, которые изменят твою жизнь!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wake_up">Во сколько ты обычно просыпаешься?</string>
+    <string name="cont">Продолжить</string>
+    <string name="good_night">Когда тебе удобно подводить итоги дня?</string>
+    <string name="first_question_of_first_qu_fr">Ты часто откладываешь дела на потом?</string>
+    <string name="change_bad">Да, и я хочу это изменить</string>
+    <string name="it_ok">Нет, я легко придерживаюсь своих планов</string>
+    <string name="can_not_answer">Затрудняюсь ответить</string>
+    <string name="sec_qu_sec_fr">Тебе сложно концентрироваться?</string>
+    <string name="yes_sec">Да, я легко отвлекаюсь</string>
+    <string name="no_sec">Нет, я концентрируюсь на задаче и не отвлекаюсь</string>
+    <string name="sec_answ">Хочу лучше планировать свой день</string>
+    <string name="first_answ">Хочу выработать полезные привычки</string>
+    <string name="create_first_task">Создай свою первую задачу</string>
+    <string name="meditation">Медитация</string>
+    <string name="read">Читать</string>
+    <string name="drink">Пить воду</string>
+    <string name="training">Тренироваться</string>
+    <string name="return_every_day">Повторять каждый день, чтобы сформировать привычку</string>
+    <string name="choose">Выбери цель</string>
+    <string name="pages">страниц</string>
+    <string name="today">Сегодня</string>
+    <string name="at_any_time">В любое время</string>
+    <string name="create">Создать задачу</string>
+    <string name="noRegular">Одноразовая задача</string>
+    <string name="choose_from_category">Или выберите из категории</string>
+    <string name="save">Сохранить</string>
+    <string name="icon">Иконка</string>
+    <string name="thisDay">234234</string>
+    <string name="remember_notification">Включить напоминания</string>
+    <string name="name_task">Название задачи</string>
+    <string name="cell">Цель по задаче</string>
+    <string name="rep">Повторы</string>
+    <string name="time">Время</string>
+    <string name="_5">5</string>
+    <string name="data">Дата</string>
+    <string name="_12_02_12">12.02.12</string>
+    <string name="remember">Напоминание</string>
+    <string name="add">Добавить</string>
+</resources>

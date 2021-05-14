@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".presrntation.mainScreen.AddTask.AddRegularTask">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/regularToolbarUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_close_24" />
+
+        <TextView
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            tools:layout_editor_absoluteX="40dp"
+            tools:layout_editor_absoluteY="18dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/nameTaskUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@id/regularToolbarUpdate"
+        android:hint="@string/name_task"
+        android:textColorHint="@color/grey_more_dark"/>
+
+    <ImageView
+        android:id="@+id/imageTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ic_task"
+        app:layout_constraintTop_toBottomOf="@id/nameTaskUpdate"/>
+
+    <TextView
+        android:id="@+id/iconTextUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintStart_toEndOf="@id/imageTask"
+        app:layout_constraintTop_toTopOf="@id/imageTask"
+        app:layout_constraintBottom_toBottomOf="@id/imageTask"
+        android:text="@string/icon"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/textCellUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cell"
+        app:layout_constraintTop_toBottomOf="@id/imageTask"
+        tools:ignore="MissingConstraints" />
+
+    <CheckBox
+        android:id="@+id/checkBoxUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textCellUpdate"
+        app:layout_constraintTop_toTopOf="@+id/textCellUpdate"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/repUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rep"
+        app:layout_constraintTop_toBottomOf="@id/textCellUpdate"
+        tools:ignore="MissingConstraints" />
+    <Button
+        android:id="@+id/timeUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/time"
+        app:layout_constraintTop_toBottomOf="@id/textCellUpdate"
+        app:layout_constraintStart_toEndOf="@id/repUpdate"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/numberOrTimeTextUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="@string/_5"
+        app:layout_constraintTop_toBottomOf="@id/repUpdate"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
